@@ -20,14 +20,14 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'4820072',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			// 'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+		
 	),
 
 	// application components
@@ -36,11 +36,21 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
-			'db'=>array(
-            	'connectionString'=>'sqlite:Sites/blog/protected/data/blog.db',
-            	'tablePrefix'=>'tbl_',
-        	),
 		),
+
+		'db'=>array(
+            'connectionString' => 'mysql:host=localhost;dbname=blog',
+	        'emulatePrepare' => true,
+	        'username' => 'arbesko',
+	        'password' => '4820072',
+	        'charset' => 'utf8',
+	        'tablePrefix' => 'tbl_',
+        ),
+
+        // 'db'=>array(
+        //     'connectionString'=>'sqlite:Sites/blog/protected/data/blog.db',
+        //     'tablePrefix'=>'tbl_',
+        // ),
 
 		// uncomment the following to enable URLs in path-format
 		/*
@@ -55,7 +65,7 @@ return array(
 		*/
 
 		// database settings are configured in database.php
-		'db'=>require(dirname(__FILE__).'/database.php'),
+		// 'db'=>require(dirname(__FILE__).'/database.php'),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
