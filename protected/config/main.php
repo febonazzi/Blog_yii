@@ -36,6 +36,10 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'db'=>array(
+            	'connectionString'=>'sqlite:Sites/blog/protected/data/blog.db',
+            	'tablePrefix'=>'tbl_',
+        	),
 		),
 
 		// uncomment the following to enable URLs in path-format
