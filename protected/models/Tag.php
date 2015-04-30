@@ -10,6 +10,16 @@
  */
 class Tag extends CActiveRecord
 {
+    public static function string2array($tags)
+    {
+        return preg_split('/\s*,\s*/',trim($tags),-1,PREG_SPLIT_NO_EMPTY);
+    }
+ 
+    public static function array2string($tags)
+    {
+        return implode(', ',$tags);
+    }
+    
     /**
      * @return string the associated database table name
      */
@@ -94,5 +104,19 @@ class Tag extends CActiveRecord
     public static function model($className=__CLASS__)
     {
         return parent::model($className);
+    }
+
+    protected function afterSave()
+    {
+        parent::afterSave();
+        Tag::model()->updateFrequency($this->_oldTags, $this->tags);
+    }
+     
+    private $_oldTags;
+     
+    protected function afterFind()
+    {
+        parent::afterFind();
+        $this->_oldTags=$this->tags;
     }
 }
