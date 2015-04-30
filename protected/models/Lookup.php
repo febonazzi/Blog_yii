@@ -102,5 +102,3 @@ class Lookup extends CActiveRecord
         return parent::model($className);
     }
 }
-
-?>

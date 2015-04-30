@@ -118,5 +118,3 @@ class Post extends CActiveRecord
         return parent::model($className);
     }
 }
-
-?>

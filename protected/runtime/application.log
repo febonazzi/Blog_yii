@@ -242,3 +242,28 @@ Stack trace:
 REQUEST_URI=/blog/index.php?r=gii/model/index
 HTTP_REFERER=http://localhost/blog/index.php?r=gii/model/index
 ---
+2015/04/30 10:42:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/Dmitry/Sites/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/index.php?r=post/admin
+HTTP_REFERER=http://localhost/blog/index.php?r=post/view&id=3
+---
+2015/04/30 13:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dii".' in /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dii')
+#1 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=dii
+---
