@@ -2221,3 +2221,15 @@ Stack trace:
 REQUEST_URI=/blog/index.php?r=comment/approve&id=8
 HTTP_REFERER=http://localhost/blog/index.php?r=comment/index
 ---
+2015/05/03 17:42:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts".' in /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('posts')
+#1 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php/posts/
+---
+2015/05/03 17:47:47 [error] [system.db.CDbCommand] Error in preparing SQL: DELETE FROM YiiCache WHERE expire>0 AND expire<1430657267
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 17:47:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: YiiCache. The SQL statement executed was: DELETE FROM YiiCache WHERE expire>0 AND expire<1430657267.
+in /Users/Dmitry/Sites/blog/index.php (14)

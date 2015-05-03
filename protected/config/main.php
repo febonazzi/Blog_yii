@@ -6,6 +6,9 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
+	'theme'=>'classic',
+	'defaultController'=>'post',
+
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 
@@ -32,6 +35,15 @@ return array(
 
 	// application components
 	'components'=>array(
+		'cache'=>array(
+            'class'=>'CDbCache',
+        ),
+
+        'db'=>array(
+            'class'=>'system.db.CDbConnection',
+            'connectionString'=>'sqlite:/wwwroot/blog/protected/data/blog.db',
+            'schemaCachingDuration'=>3600,
+        ),
 
 		'user'=>array(
 			// enable cookie-based authentication
@@ -45,6 +57,26 @@ return array(
 	        'password' => '4820072',
 	        'charset' => 'utf8',
 	        'tablePrefix' => 'tbl_',
+        ),
+
+        'urlManager'=>array(
+            'urlFormat'=>'path',
+            'rules'=>array(
+                'post/<id:\d+>/<title:.*?>'=>'post/view',
+                'posts/<tag:.*?>'=>'post/index',
+                'post/update/<id:\d+>'=>'post/update',
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+            ),
+        ),
+
+        'log'=>array(
+            'class'=>'CLogRouter',
+            'routes'=>array(
+                array(
+                    'class'=>'CFileLogRoute',
+                    'levels'=>'error, warning',
+                ),
+            ),
         ),
 
         // 'db'=>array(
