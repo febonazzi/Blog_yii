@@ -50,10 +50,8 @@ class Post extends CActiveRecord
             array('title, content, status', 'required'),
             array('title', 'length', 'max'=>128),
             array('status', 'in', 'range'=>array(1,2,3)),
-            array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/',
-                'message'=>'В тегах можно использовать только буквы.'),
+            array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/', 'message'=>'В тегах можно использовать только буквы.'),
             array('tags', 'normalizeTags'),
-     
             array('title, status', 'safe', 'on'=>'search'),
         );
     }
@@ -155,5 +153,22 @@ class Post extends CActiveRecord
         }
         else
             return false;
+    }
+
+    protected function afterDelete()
+    {
+        parent::afterDelete();
+        Comment::model()->deleteAll('post_id='.$this->id);
+        // Tag::model()->updateFrequency($this->tags, '');
+    }
+
+    public function addComment($comment)
+    {
+        if(Yii::app()->params['commentNeedApproval'])
+            $comment->status=Comment::STATUS_PENDING;
+        else
+            $comment->status=Comment::STATUS_APPROVED;
+        $comment->post_id=$this->id;
+        return $comment->save();
     }
 }

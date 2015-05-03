@@ -311,3 +311,713 @@ Stack trace:
 REQUEST_URI=/blog/index.php?r=post/create
 HTTP_REFERER=http://localhost/blog/index.php?r=post/create
 ---
+2015/04/30 18:52:25 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=6
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:52:52 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=7
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:52:55 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=8
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:52:59 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=9
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:53:02 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=10
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:54:10 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=11
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:55:07 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=12
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:55:55 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=13
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:56:05 [warning] [application] Failed to set unsafe attribute "title" of "Post".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (69)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:56:05 [warning] [application] Failed to set unsafe attribute "content" of "Post".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (69)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:56:05 [warning] [application] Failed to set unsafe attribute "tags" of "Post".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (69)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:56:05 [warning] [application] Failed to set unsafe attribute "status" of "Post".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (69)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:56:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'title' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`update_time`, `create_time`, `author_id`) VALUES (:yp0, :yp1, :yp2).
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (70)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:56:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'title' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_post` (`update_time`, `create_time`, `author_id`) VALUES (:yp0, :yp1, :yp2)' in /Users/Dmitry/Sites/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(70): CActiveRecord->save()
+#3 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#14 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://localhost/blog/index.php?r=post/create
+---
+2015/04/30 18:57:03 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=14
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:59:01 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 49 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#10 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/view&id=15
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (49)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 18:59:56 [error] [php] Missing argument 1 for PostController::loadModel(), called in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php on line 113 and defined (/Users/Dmitry/Sites/blog/protected/controllers/PostController.php:167)
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#2 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#3 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterPostOnly()
+#4 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#8 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#11 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): PostController->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /Users/Dmitry/Sites/blog/index.php(14): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/delete&id=15
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (167)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (113)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/04/30 19:03:25 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('erfbrgb, asdfs', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?r=post/delete&id=15
+HTTP_REFERER=http://localhost/blog/index.php?r=post/view&id=15
+---
+2015/04/30 19:04:15 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('erfbrgb, asdfs', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?r=post/delete&id=14
+HTTP_REFERER=http://localhost/blog/index.php?r=post/view&id=14
+---
+2015/05/03 11:06:01 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('yii, blog', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?r=post/delete&id=1
+HTTP_REFERER=http://localhost/blog/index.php?r=post/view&id=1
+---
+2015/05/03 11:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php:180
+Stack trace:
+#0 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(49): PostController->loadModel()
+#1 [internal function]: PostController->actionView('1')
+#2 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#3 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#4 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#14 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=post/view&id=1
+HTTP_REFERER=http://localhost/blog/index.php?r=post
+---
+2015/05/03 11:06:58 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('erfbrgb, asdfs', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?r=post/delete&id=13
+HTTP_REFERER=http://localhost/blog/index.php?r=post/view&id=13
+---
+2015/05/03 11:07:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php:180
+Stack trace:
+#0 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(49): PostController->loadModel()
+#1 [internal function]: PostController->actionView('13')
+#2 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#3 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#4 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#14 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=post/view&id=13
+HTTP_REFERER=http://localhost/blog/index.php?r=post/index
+---
+2015/05/03 11:10:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=admin
+---
+2015/05/03 11:15:07 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('erfbrgb, asdfs', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?r=post/delete&id=11
+HTTP_REFERER=http://localhost/blog/index.php?r=post/view&id=11&title=frgnfb
+---
+2015/05/03 11:15:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php:187
+Stack trace:
+#0 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(49): PostController->loadModel()
+#1 [internal function]: PostController->actionView('11')
+#2 /Users/Dmitry/Sites/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#3 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#4 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#14 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=post/view&id=11&title=frgnfb
+HTTP_REFERER=http://localhost/blog/index.php?r=post/admin
+---
+2015/05/03 11:15:27 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('ercerc', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?ajax=yw0&id=5&r=post%2Fdelete
+HTTP_REFERER=http://localhost/blog/index.php?r=post/admin
+---
+2015/05/03 11:15:34 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('erfbrgb', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?ajax=yw0&id=8&r=post%2Fdelete
+HTTP_REFERER=http://localhost/blog/index.php?r=post/admin
+---
+2015/05/03 11:15:39 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('erfbrgb', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?ajax=yw0&id=10&r=post%2Fdelete
+HTTP_REFERER=http://localhost/blog/index.php?r=post/admin
+---
+2015/05/03 11:15:46 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('erfbrgb', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?ajax=yw0&id=7&r=post%2Fdelete
+HTTP_REFERER=http://localhost/blog/index.php?r=post/admin
+---
+2015/05/03 11:16:08 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('erfbrgb', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?ajax=yw0&id=9&r=post%2Fdelete
+HTTP_REFERER=http://localhost/blog/index.php?r=post/admin
+---
+2015/05/03 11:16:23 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('erfbrgb', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?r=post/delete&id=6
+HTTP_REFERER=http://localhost/blog/index.php?r=post/view&id=6
+---
+2015/05/03 12:01:56 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:01:56 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:01:56 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:07 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:07 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:07 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:17 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:17 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:17 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:28 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:28 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:28 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:40 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:40 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:40 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:58 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:58 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:02:58 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/CommentController.php (72)
+in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/03 12:04:00 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "updateFrequency".' in /Users/Dmitry/Sites/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('updateFrequency', Array)
+#1 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): CActiveRecord->__call('updateFrequency', Array)
+#2 /Users/Dmitry/Sites/blog/protected/models/Post.php(162): Tag->updateFrequency('fefe', '')
+#3 /Users/Dmitry/Sites/yii/framework/db/ar/CActiveRecord.php(1228): Post->afterDelete()
+#4 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(113): CActiveRecord->delete()
+#5 /Users/Dmitry/Sites/yii/framework/web/actions/CInlineAction.php(49): PostController->actionDelete()
+#6 /Users/Dmitry/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/Dmitry/Sites/yii/framework/web/CController.php(1116): CFilterChain->run()
+#9 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/Dmitry/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/Dmitry/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Dmitry/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/Dmitry/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#18 /Users/Dmitry/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#19 /Users/Dmitry/Sites/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Users/Dmitry/Sites/blog/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/index.php?r=post/delete&id=15
+HTTP_REFERER=http://localhost/blog/index.php?r=post/view&id=15
+---

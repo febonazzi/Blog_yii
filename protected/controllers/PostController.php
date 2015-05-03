@@ -105,13 +105,18 @@ class PostController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($id)
+	public function actionDelete()
 	{
-		$this->loadModel($id)->delete();
-
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	    if(Yii::app()->request->isPostRequest)
+	    {
+	        // we only allow deletion via POST request
+	        $this->loadModel()->delete();
+	 
+	        if(!isset($_GET['ajax']))
+	            $this->redirect(array('index'));
+	    }
+	    else
+	        throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 	}
 
 	/**
@@ -145,13 +150,11 @@ class PostController extends Controller
 	public function actionAdmin()
 	{
 		$model=new Post('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Post']))
-			$model->attributes=$_GET['Post'];
-
-		$this->render('admin',array(
-			'model'=>$model,
-		));
+	    if(isset($_GET['Post']))
+	        $model->attributes=$_GET['Post'];
+	    $this->render('admin',array(
+	        'model'=>$model,
+	    ));
 	}
 
 	/**
@@ -161,15 +164,14 @@ class PostController extends Controller
 	 * @return Post the loaded model
 	 * @throws CHttpException
 	 */
-	public function loadModel($id)
+	public function loadModel()
 	{
 		if($this->_model===null)
 	    {
 	        if(isset($_GET['id']))
 	        {
 	            if(Yii::app()->user->isGuest)
-	                $condition='status='.Post::STATUS_PUBLISHED
-	                    .' OR status='.Post::STATUS_ARCHIVED;
+	                $condition='status='.Post::STATUS_PUBLISHED.' OR status='.Post::STATUS_ARCHIVED;
 	            else
 	                $condition='';
 	            $this->_model=Post::model()->findByPk($_GET['id'], $condition);
