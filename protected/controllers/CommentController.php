@@ -49,32 +49,11 @@ class CommentController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView()
+	public function actionView($id)
 	{
-	    $post=$this->loadModel();
-	    $comment=$this->newComment($post);
-	 
-	    $this->render('view',array(
-	        'model'=>$post,
-	        'comment'=>$comment,
-	    ));
-	}
-	 
-	protected function newComment($post)
-	{
-	    $comment=new Comment;
-	    if(isset($_POST['Comment']))
-	    {
-	        $comment->attributes=$_POST['Comment'];
-	        if($post->addComment($comment))
-	        {
-	            if($comment->status==Comment::STATUS_PENDING)
-	                Yii::app()->user->setFlash('commentSubmitted','Thank you for your comment.
-	                Your comment will be posted once it is approved.');
-	            $this->refresh();
-	        }
-	    }
-	    return $comment;
+		$this->render('view',array(
+			'model'=>$this->loadModel($id),
+		));
 	}
 
 	/**
@@ -143,10 +122,16 @@ class CommentController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Comment');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+		$dataProvider=new CActiveDataProvider('Comment', array(
+	        'criteria'=>array(
+	            'with'=>'post',
+	            'order'=>'t.status, t.create_time DESC',
+	        ),
+	    ));
+	 
+	    $this->render('index',array(
+	        'dataProvider'=>$dataProvider,
+	    ));
 	}
 
 	/**
@@ -190,5 +175,17 @@ class CommentController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+
+	public function actionApprove()
+	{
+	    if(Yii::app()->request->isPostRequest)
+	    {
+	        $comment=$this->loadModel();
+	        $comment->approve();
+	        $this->redirect(array('index'));
+	    }
+	    else
+	        throw new CHttpException(400,'Invalid request...');
 	}
 }

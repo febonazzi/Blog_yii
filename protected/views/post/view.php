@@ -43,7 +43,7 @@ $this->menu=array(
             'comments'=>$model->comments,
         )); ?>
     <?php endif; ?>
-    
+
     <h3>Оставить комментарий</h3>
  
     <?php if(Yii::app()->user->hasFlash('commentSubmitted')): ?>

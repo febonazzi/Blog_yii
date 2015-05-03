@@ -2,6 +2,7 @@
 
 class PostController extends Controller
 {
+	private $_model;
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -44,15 +45,40 @@ class PostController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView($id)
+	public function actionView()
 	{
-		$post=$this->loadModel();
+	    $post=$this->loadModel();
+	    $comment=$this->newComment($post);
+	 
 	    $this->render('view',array(
 	        'model'=>$post,
+	        'comment'=>$comment,
 	    ));
 	}
+	 
+	protected function newComment($post)
+	{
+	    $comment=new Comment;
+ 
+	    if(isset($_POST['ajax']) && $_POST['ajax']==='comment-form')
+	    {
+	        echo CActiveForm::validate($comment);
+	        Yii::app()->end();
+	    }
+	 
+	    if(isset($_POST['Comment']))
+	    {
+	        $comment->attributes=$_POST['Comment'];
+	        if($post->addComment($comment))
+	        {
+	            if($comment->status==Comment::STATUS_PENDING)
+	                Yii::app()->user->setFlash('commentSubmitted','Thank you for your comment. Your comment will be posted once it is approved.');
+	            $this->refresh();
+	        }
+	    }
+	    return $comment;
+	}
 
-	private $_model;
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
