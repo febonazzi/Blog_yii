@@ -4,13 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Comments',
-);
-
-$this->menu=array(
-	array('label'=>'Create Comment', 'url'=>array('create')),
-	array('label'=>'Manage Comment', 'url'=>array('admin')),
-);
-?>
+);?>
 
 <h1>Comments</h1>
 
