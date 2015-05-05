@@ -23,7 +23,10 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		
+		'user'=>array(
+            'class' => 'application.vendor.mishamx.yii-user.UserModule',
+        ),
+        
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'4820072',
@@ -39,11 +42,11 @@ return array(
             'class'=>'CDbCache',
         ),
 
-        'db'=>array(
-            'class'=>'system.db.CDbConnection',
-            'connectionString'=>'sqlite:/wwwroot/blog/protected/data/blog.db',
-            'schemaCachingDuration'=>3600,
-        ),
+        // 'db'=>array(
+        //     'class'=>'system.db.CDbConnection',
+        //     'connectionString'=>'sqlite:/wwwroot/blog/protected/data/blog.db',
+        //     'schemaCachingDuration'=>3600,
+        // ),
 
 		'user'=>array(
 			// enable cookie-based authentication

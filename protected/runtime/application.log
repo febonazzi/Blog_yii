@@ -2233,3 +2233,52 @@ REQUEST_URI=/blog/index.php/posts/
 in /Users/Dmitry/Sites/blog/index.php (14)
 2015/05/03 17:47:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: YiiCache. The SQL statement executed was: DELETE FROM YiiCache WHERE expire>0 AND expire<1430657267.
 in /Users/Dmitry/Sites/blog/index.php (14)
+2015/05/05 12:59:47 [error] [exception.CException] exception 'CException' with message 'Theme directory "/Users/Dmitry/Sites/blog/themes" does not exist.' in /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CThemeManager.php:110
+Stack trace:
+#0 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CThemeManager.php(98): CThemeManager->setBasePath('/Users/Dmitry/S...')
+#1 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CThemeManager.php(60): CThemeManager->getBasePath()
+#2 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CWebApplication.php(257): CThemeManager->getTheme('classic')
+#3 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CController.php(586): CWebApplication->getTheme()
+#4 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CController.php(867): CController->getViewFile('index')
+#5 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /Users/Dmitry/Sites/blog/protected/controllers/PostController.php(170): CController->render('index', Array)
+#7 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#8 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('')
+#17 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#18 /Users/Dmitry/Sites/blog/vendor/yiisoft/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /Users/Dmitry/Sites/blog/index.php(15): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/
+---
+2015/05/05 13:38:16 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (65)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (51)
+in /Users/Dmitry/Sites/blog/public/index.php (15)
+2015/05/05 13:38:37 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (65)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (51)
+in /Users/Dmitry/Sites/blog/public/index.php (15)
+2015/05/05 13:38:38 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (65)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (51)
+in /Users/Dmitry/Sites/blog/public/index.php (15)
+2015/05/05 13:38:43 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (65)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (51)
+in /Users/Dmitry/Sites/blog/public/index.php (15)
+2015/05/05 13:38:46 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (65)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (51)
+in /Users/Dmitry/Sites/blog/public/index.php (15)
+2015/05/05 13:38:48 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (71)
+in /Users/Dmitry/Sites/blog/protected/controllers/PostController.php (51)
+in /Users/Dmitry/Sites/blog/public/index.php (15)
